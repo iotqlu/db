@@ -4,6 +4,7 @@ var errorElm = document.getElementById('error');
 var commandsElm = document.getElementById('commands');
 var dbFileElm = document.getElementById('dbfile');
 var savedbElm = document.getElementById('savedb');
+var showdbBtn = document.getElementById('showdb');
 
 // Start the worker in which sql.js will run
 var worker = new Worker("dist/worker.sql-wasm.js");
@@ -139,3 +140,10 @@ function savedb() {
 	worker.postMessage({ action: 'export' });
 }
 savedbElm.addEventListener("click", savedb, true);
+
+// Execute the commands when the button is clicked
+function showDb() {
+	noerror()
+	execute( 'select * from sqlite_master;');
+}
+showdbBtn.addEventListener("click", showDb, true);
