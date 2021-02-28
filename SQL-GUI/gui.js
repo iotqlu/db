@@ -144,6 +144,7 @@ savedbElm.addEventListener("click", savedb, true);
 // Execute the commands when the button is clicked
 function showDb() {
 	noerror()
-	execute( "select * from sqlite_master where type='table';");
+	editor.setValue("SELECT `name`, `sql`\n  FROM `sqlite_master`\n  WHERE type='table';");
+	execEditorContents();
 }
 showdbBtn.addEventListener("click", showDb, true);
