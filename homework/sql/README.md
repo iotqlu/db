@@ -2,7 +2,7 @@
 
 [作业下载](../../assets/file/DB_SQL.pdf)
 
-[参考答案](../../assets/file/DB_SQL_w_Answer.pdf)
+[参考答案](../../assets/file/DB_SQL_w_Answer.zip)
 
 
 
