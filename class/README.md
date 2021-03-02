@@ -5,7 +5,7 @@ sort: 1
 
 {% include list.liquid all=true %}
 
-## 教学内容
+## 章节
 
 * 第一章 数据库的基本概念知识
 * 第三章 SQL（重点）
