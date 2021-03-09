@@ -18,4 +18,7 @@ sort: 2
     * 2.4.2 专门的关系运算
         * 选择, 投影, 连接, 除运算
 
-![希腊字母的英语发音](../../assets/figures/greek.png)
+
+
+## 希腊字母的英语发音
+<img title="希腊字母的英语发音" src="../../assets/figures/greek.png" width="500px"/>
