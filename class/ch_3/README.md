@@ -41,3 +41,42 @@ MySQL provides two wildcard characters for constructing patterns: percentage % a
 * The percentage ( % ) wildcard matches any string of zero or more characters.
 * The underscore ( _ ) wildcard matches any single character.
 
+## 相关知识
+
+### SQL是不是编程语言?
+
+* Turing Machine
+* BrainFxxk 编程语言 [https://iot.it.qlu.edu.cn/brainfxxk](https://iot.it.qlu.edu.cn/brainfxxk)
+
+The following flowchart illustrates the execution of a recursive CTE:
+
+![flowchart illustrates the execution of a recursive CTE](../../assets/figures/SQL-Server-Recursive-CTE-execution-flow.png)
+
+> 以下代码可以在MySQL8+版本上运行
+
+```sql
+WITH RECURSIVE temp (n, fact) AS 
+(SELECT 0, 1 -- Initial Subquery
+  UNION ALL 
+ SELECT n+1, (n+1)*fact FROM temp -- Recursive Subquery 
+        WHERE n < 9)
+SELECT * FROM temp;
+
++------+--------+
+| n    | fact   |
++------+--------+
+|    0 |      1 |
+|    1 |      1 |
+|    2 |      2 |
+|    3 |      6 |
+|    4 |     24 |
+|    5 |    120 |
+|    6 |    720 |
+|    7 |   5040 |
+|    8 |  40320 |
+|    9 | 362880 |
++------+--------+
+```
+
+
+
