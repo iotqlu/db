@@ -6,7 +6,7 @@ sort: -3
 
 数据库系统概论，王珊，高等教育出版社 [[pdf下载]](../../assets/file/db_system_concepts_5th.pdf)
 
-随书课件[[打包下载]](../../assets/files/db_slides/db_spring2021.zip)
+随书课件[[打包下载]](../../assets/file/db_slides/db_spring2021.zip)
 
 1. 第1章 绪论 [[pdf下载]](../../assets/file/db_slides/ch_1.pdf)
 1. 第2章 关系数据库 [[pdf下载]](../../assets/file/db_slides/ch_2.pdf)
@@ -25,3 +25,5 @@ sort: -3
 
 
 参考书：《数据库系统概念》，Abraham Silberschatz, 机械工业出版社，2012年  [[英文版下载]](../../assets/file/Database_System_Concepts_6th_edition.pdf)
+
+随堂课件[[下载]](../../assets/file/db-s21.pdf)
