@@ -48,6 +48,21 @@ MySQL provides two wildcard characters for constructing patterns: percentage % a
 * Turing Machine
 * BrainFxxk 编程语言 [https://iot.it.qlu.edu.cn/brainfxxk](https://iot.it.qlu.edu.cn/brainfxxk)
 
+Tower of Hanoi Algorithm:
+
+```code
+FUNCTION MoveTower(disk, source, dest, spare):
+IF disk == 0, THEN:
+    move disk from source to dest
+ELSE:
+    MoveTower(disk-1, source, spare, dest)
+    move disk from source to dest
+    MoveTower(disk-1, spare, dest, source)
+END IF
+```
+
+[Tower of Hanoi 动画演示](https://iot.it.qlu.edu.cn/animation/web/TowerOfHanoieBook.html)
+
 The following flowchart illustrates the execution of a recursive CTE:
 
 ![flowchart illustrates the execution of a recursive CTE](../../assets/figures/SQL-Server-Recursive-CTE-execution-flow.png)
@@ -77,6 +92,3 @@ SELECT * FROM temp;
 |    9 | 362880 |
 +------+--------+
 ```
-
-
-
