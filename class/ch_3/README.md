@@ -4,6 +4,8 @@ sort: 3
 
 # 第三章 关系数据库标准语言SQL
 
+{%include math.html%}
+
 * SQL概述
     * SQL (Structured Query Language), 结构化查询语言，是关系数据库的标准语言
 * SQL的特点(了解)
