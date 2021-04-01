@@ -20,7 +20,7 @@ $use_auth = true;
 // Users: array('Username' => 'Password', 'Username2' => 'Password2', ...)
 // Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
 $auth_users = array(
-    'admin' => '$2y$10$/K.hjNr84lLNDt8fTXjoI.DBp6PpeyoJ.mGwrrLuCZfAwfSAGqhOW',
+    'admin' => '$2y$10$4dt6fpbNUxUvixu11sHbzu07tqD/gyN2nrf2z6KYU3wIcdzlkkE62',
 '201795040038' => '$2y$10$N..6i0GgYX6Rbnf3inF2gea/cTpIuUN7qfjGobJBLLcYxRezQLQcO',
 '201903040042' => '$2y$10$dqvxeqyHC.DgVk8CmpATAO08HuJT4WnBIgxZ4AxeTbdaa1TjKln0u',
 '201903040043' => '$2y$10$ZQ/rXKPaZyEDNNM0UmGJ5uSbbHoy8PWAyTc/CwvyybWSSnSSNZrzq',
@@ -185,8 +185,7 @@ $default_timezone = 'Asia/Shanghai';
 
 // Root path for file manager
 // use absolute path of directory i.e: '/var/www/folder' or $_SERVER['DOCUMENT_ROOT'].'/folder'
-//$root_path = $_SERVER['DOCUMENT_ROOT'];
-$root_path = '/var/www/db-s21/';
+$root_path = $_SERVER['DOCUMENT_ROOT'];
 
 // Root url for links in file manager.Relative to $http_host. Variants: '', 'path/to/subfolder'
 // Will not working if $root_path will be outside of server document root
@@ -199,19 +198,19 @@ $http_host = $_SERVER['HTTP_HOST'];
 // array('Username' => 'Directory path', 'Username2' => 'Directory path', ...)
 //$directories_users = array();
 $directories_users = array(
-    'admin' => './',
+    'admin' => '/var/www/db-s21',
     '201795040038' => '201795040038',
     '201903040042' => '201903040042',
     '201903040043' => '201903040043',
     '201903040044' => '201903040044',
     '201903040045' => '201903040045',
     '201903040046' => '201903040046',
-    '201903040047' => 'iot-2',
+    '201903040047' => '/var/www/db-s21/iot-2',
     '201903040048' => '201903040048',
     '201903040049' => '201903040049',
     '201903040050' => '201903040050',
     '201903040051' => '201903040051',
-    '201903040052' => 'iot-2',
+    '201903040052' => '/var/www/db-s21/iot-2',
     '201903040053' => '201903040053',
     '201903040054' => '201903040054',
     '201903040055' => '201903040055',
@@ -242,7 +241,7 @@ $directories_users = array(
     '201903040082' => '201903040082',
     '201703040049' => '201703040049',
     '201903040001' => '201903040001',
-    '201903040002' => 'iot-1',
+    '201903040002' => '/var/www/db-s21/iot-1',
     '201903040003' => '201903040003',
     '201903040004' => '201903040004',
     '201903040005' => '201903040005',
@@ -254,29 +253,29 @@ $directories_users = array(
     '201903040011' => '201903040011',
     '201903040012' => '201903040012',
     '201903040013' => '201903040013',
-    '201903040014' => 'iot-1',
+    '201903040014' => '/var/www/db-s21/iot-1',
     '201903040015' => '201903040015',
     '201903040016' => '201903040016',
     '201903040017' => '201903040017',
-    '201903040018' => 'iot-1',
+    '201903040018' => '/var/www/db-s21/iot-1',
     '201903040019' => '201903040019',
     '201903040020' => '201903040020',
-    '201903040021' => 'iot-1',
+    '201903040021' => '/var/www/db-s21/iot-1',
     '201903040022' => '201903040022',
-    '201903040023' => 'iot-1',
-    '201903040024' => 'iot-1',
+    '201903040023' => '/var/www/db-s21/iot-1',
+    '201903040024' => '/var/www/db-s21/iot-1',
     '201903040025' => '201903040025',
     '201903040026' => '201903040026',
     '201903040027' => '201903040027',
-    '201903040028' => 'iot-2',
-    '201903040029' => 'iot-2',
+    '201903040028' => '/var/www/db-s21/iot-2',
+    '201903040029' => '/var/www/db-s21/iot-2',
     '201903040030' => '201903040030',
     '201903040032' => '201903040032',
     '201903040034' => '201903040034',
-    '201903040035' => 'iot-2',
+    '201903040035' => '/var/www/db-s21/iot-2',
     '201903040036' => '201903040036',
     '201903040037' => '201903040037',
-    '201903040038' => 'iot-2',
+    '201903040038' => '/var/www/db-s21/iot-2',
     '201903040039' => '201903040039',
     '201903040040' => '201903040040',
     '201903040041' => '201903040041',
