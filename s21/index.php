@@ -12,7 +12,7 @@ $CONFIG = '{"lang":"zh-CN","error_reporting":false,"show_hidden":false,"hide_Col
 define('VERSION', '2.4.4');
 
 //Application Title
-define('APP_TITLE', 'IoT File Manager');
+define('APP_TITLE', 'Database System Project File Manager');
 
 // --- EDIT BELOW CONFIGURATION CAREFULLY ---
 
