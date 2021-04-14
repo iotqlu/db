@@ -35,7 +35,7 @@ sort: 3
 1. 实践数据库和表结构的修改操作.
 1. 实践数据库的备份和恢复.
 
-MySQL数据库安装和相关注意事项, 参考 [https://iot.it.qlu.edu.cn/wx/exp_0/server.html#%E5%AE%89%E8%A3%85-mysql-8](https://iot.it.qlu.edu.cn/wx/exp_0/server.html#%E5%AE%89%E8%A3%85-mysql-8)
+MySQL数据库安装和相关注意事项, 参考 [https://iot.qlu.edu.cn/wx/exp_0/server.html#%E5%AE%89%E8%A3%85-mysql-8](https://iot.qlu.edu.cn/wx/exp_0/server.html#%E5%AE%89%E8%A3%85-mysql-8)
 
 ## Team Project
 

@@ -48,7 +48,7 @@ MySQL provides two wildcard characters for constructing patterns: percentage % a
 ### SQL是不是编程语言?
 
 * Turing Machine
-* BrainFxxk 编程语言 [https://iot.it.qlu.edu.cn/brainfxxk](https://iot.it.qlu.edu.cn/brainfxxk)
+* BrainFxxk 编程语言 [https://iot.qlu.edu.cn/brainfxxk](https://iot.qlu.edu.cn/brainfxxk)
 
 Tower of Hanoi Algorithm:
 
@@ -63,7 +63,7 @@ ELSE:
 END IF
 ```
 
-[Tower of Hanoi 动画演示](https://iot.it.qlu.edu.cn/animation/web/TowerOfHanoieBook.html)
+[Tower of Hanoi 动画演示](https://iot.qlu.edu.cn/animation/web/TowerOfHanoieBook.html)
 
 The following flowchart illustrates the execution of a recursive CTE:
 
