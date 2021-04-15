@@ -3307,7 +3307,7 @@ function fm_show_nav_path($path)
                 }
                 $root_url .= $sep . implode($sep, $array);
             }
-            $root_url .= "<i class='bread-crumb'>";
+            
             echo '<div class="col-xs-6 col-sm-5">' . $root_url . '</div>';
             ?>
 
