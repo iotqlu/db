@@ -12,6 +12,9 @@ description:
 ## remote method ##
 remote_theme: rundocs/jekyll-rtd-theme
 
+emoji:
+  src: "/assets/images/"
+
 readme_index:
   with_frontmatter: true
 
