@@ -14,7 +14,7 @@ sort: 3
 |5	|四	|01-04|机电楼A511|[MySQL数据库实践](#lab_1)|
 |6	|四	|01-04|机电楼A511|数据库表设计实践|
 |7	|四	|01-04|机电楼A511|SQL实践|
-|8	|四	|01-04|机电楼A511|数据库索引实践|
+|8	|四	|01-04|机电楼A511|数据库索引实践(#lab_4)|
 |9	|四	|01-04|机电楼A511|Java数据库操作实践|
 |10	|四	|01-04|机电楼A511|信息管理系统Web应用开发实践|
 |11	|四	|01-04|机电楼A511|信息管理系统桌面应用开发实践|
@@ -36,6 +36,22 @@ sort: 3
 1. 实践数据库的备份和恢复.
 
 MySQL数据库安装和相关注意事项, 参考 [https://iot.qlu.edu.cn/wx/exp_0/server.html#%E5%AE%89%E8%A3%85-mysql-8](https://iot.qlu.edu.cn/wx/exp_0/server.html#%E5%AE%89%E8%A3%85-mysql-8)
+
+#### <a name="lab_4"></a>数据库索引实践
+
+1. 下载 [Employees](https://iot.qlu.edu.cn/dataset/employees_db.zip) 数据集(约35M).
+
+2. 安装数据集. 使用命令 `mysql -t < employees.sql`.
+
+3. 练习以下命令:
+    - SHOW DATABASES
+    - USE <database_name>
+    - SHOW TABLES
+    - DESC <table_name>
+    - SELECT * from <table_name> limit 1, 10
+    - CREATE INDEX <index_name> on <table_name>(<column_name>)
+    - DROP INDEX <index_name> on <table_name>
+    - EXPLAIN SELECT * from <table_name> where <conditional_expression>
 
 ## Team Project
 
