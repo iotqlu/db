@@ -27,3 +27,5 @@ sort: -3
 参考书：《数据库系统概念》，Abraham Silberschatz, 机械工业出版社，2012年  [[英文版下载]](../../assets/file/Database_System_Concepts_6th_edition.pdf)
 
 随堂课件[[下载]](../../assets/file/db-s21.pdf)
+
+2021年4月21日更新: [B+Tree索引 随堂课件](../../assets/file/data_structures_and_optimization.pdf)
