@@ -57,7 +57,7 @@ MySQL数据库安装和相关注意事项, 参考 [https://iot.qlu.edu.cn/wx/exp
 
 1. 使用Eclipse或其他开发工具创建Java Project
 
-2. 下载 [mysql-connector-java-8.0.24.jar](../assets/file/mysql-connector-java-8.0.24.jar) [protobuf-java-3.11.4.jar](../assets/file/protobuf-java-3.11.4.jar), 添加到工程的包依赖中.
+2. 下载 [mysql-connector-java-8.0.24.jar](../assets/file/mysql-connector-java-8.0.24.jar), [protobuf-java-3.11.4.jar](../assets/file/protobuf-java-3.11.4.jar), 添加到工程的包依赖中.
 
 3. MySQL创建用户. 两种方式可选:
     - 命令行操作: 
