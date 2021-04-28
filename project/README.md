@@ -15,7 +15,7 @@ sort: 3
 |6	|四	|01-04|机电楼A511|数据库表设计实践|
 |7	|四	|01-04|机电楼A511|SQL实践|
 |8	|四	|01-04|机电楼A511|[数据库索引实践](#lab_4)|
-|9	|四	|01-04|机电楼A511|Java数据库操作实践|
+|9	|四	|01-04|机电楼A511|[Java数据库操作实践](#lab_5)|
 |10	|四	|01-04|机电楼A511|信息管理系统Web应用开发实践|
 |11	|四	|01-04|机电楼A511|信息管理系统桌面应用开发实践|
 |12	|四	|01-04|机电楼A511|综合实验|
@@ -48,10 +48,138 @@ MySQL数据库安装和相关注意事项, 参考 [https://iot.qlu.edu.cn/wx/exp
     - USE `<database_name>`
     - SHOW TABLES
     - DESC `<table_name>`
-    - SELECT * from `<table_name>` limit 1, 10
+    - SELECT * from `<table_name>` limit 0, 10
     - CREATE INDEX `<index_name>` on `<table_name>`(`<column_name>`)
     - DROP INDEX `<index_name>` on `<table_name>`
     - EXPLAIN SELECT * from `<table_name>` where `<conditional_expression>`
+
+#### <a name="lab_5"></a>Java数据库操作实践
+
+1. 使用Eclipse或其他开发工具创建Java Project
+
+2. 下载 [mysql-connector-java-8.0.24.jar](../assets/file/mysql-connector-java-8.0.24.jar) [protobuf-java-3.11.4.jar](../assets/file/protobuf-java-3.11.4.jar), 添加到工程的包依赖中.
+
+3. MySQL创建用户. 两种方式可选:
+    - 命令行操作: 
+        1. `CREATE USER 'employees'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yoursecretpassword';`
+        1. `grant all on employees.* to 'employees'@'localhost';`
+    - MySQL Workbench:
+        1. 'Server' -> 'Users and Privileges'.
+        1. 添加用户. 'Authentication Type' 选择 'Standard'.
+
+4. 示例代码: Employee.java, App.java
+
+Employee.java
+
+```java
+public class Employee {
+	
+	private String empNo;
+	private String birthDate;
+	private String firstName;
+	private String lastName;
+	private String gender;
+	private String hireDate;
+	
+	public Employee() {	}
+	
+	public Employee(String empNo, String birthDate,
+			String firstName, String lastName,
+			String gender, String hireDate) {
+		super();
+		this.empNo = empNo;
+		this.birthDate = birthDate;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.gender = gender;
+		this.hireDate = hireDate;
+	}
+
+	public String getEmpNo() {
+		return empNo;
+	}
+	public void setEmpNo(String empNo) {
+		this.empNo = empNo;
+	}
+	public String getBirthDate() {
+		return birthDate;
+	}
+	public void setBirthDate(String birthDate) {
+		this.birthDate = birthDate;
+	}
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getHireDate() {
+		return hireDate;
+	}
+	public void setHireDate(String hireDate) {
+		this.hireDate = hireDate;
+	}
+}
+```
+
+App.java
+```java
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+public class App {
+	public static void main(String[] args) {
+		String sql = "select * from employees limit 0, 10";
+		List<Employee> empList = new ArrayList<>();
+		try (Connection conn = DriverManager.getConnection(
+				"jdbc:mysql://localhost:3306/employees",
+				"employees", "passwd");
+				Statement stmt = conn.createStatement();
+				ResultSet rs = stmt.executeQuery(sql)) {
+			while (rs.next()) {
+				String empNo = rs.getString("emp_no");
+				String birthDate = rs
+						.getString("birth_date");
+				String firstName = rs
+						.getString("first_name");
+				String lastName = rs
+						.getString("last_name");
+				String gender = rs.getString("gender");
+				String hireDate = rs
+						.getString("hire_date");
+
+				Employee emp = new Employee(empNo,
+						birthDate, firstName, lastName,
+						gender, hireDate);
+				empList.add(emp);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		for (Employee emp : empList) {
+			System.out.println(emp.getEmpNo());
+		}
+	}
+}
+```
 
 ## Team Project
 

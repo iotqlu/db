@@ -29,3 +29,5 @@ sort: -3
 随堂课件[[下载]](../../assets/file/db-s21.pdf)
 
 2021年4月21日更新: [B+Tree索引 随堂课件](../../assets/file/data_structures_and_optimization.pdf)
+
+2021年4月28日更新: [Java JDBC 随堂课件](../../assets/file/java_jdbc.pdf)
