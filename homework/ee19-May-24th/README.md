@@ -75,16 +75,18 @@ delete from employees where age < 18
 
 > 注意 delete from 中间没有 *
 
-问题六：现在创建一个员工薪资表 `employee_salary`， 员工薪资表记录每个员工每个月发放的薪资金额（月薪），要求包括以下字段：员工编号 `emp_no`, 发放日期 `salay_date`, 发放金额 `salary`， 请给出创建表的`CREATE`语句，并结合对业务的理解创建合适的主码和索引。
+问题六：现在创建一个员工薪资表 `employee_salary`， 员工薪资表记录每个员工每个月发放的薪资金额（月薪），要求包括以下字段：员工编号 `emp_no`, 发放日期 `salary_date`, 发放金额 `salary`， 请给出创建表的`CREATE`语句，并结合对业务的理解创建合适的主码和索引。
 
 ```sql
 CREATE TABLE `employee_salary` (
   `emp_no` int NOT NULL,
-  `salay_date` date NOT NULL,
+  `salary_date` date NOT NULL,
   `salary` float NOT NULL,
   PRIMARY KEY (`emp_no`,`salay_date`)
 );
 ```
+
+> 注意组合主键的声明方式
 
 问题七：计算员工薪资表中最低、最高、平均的月薪金额。
 
