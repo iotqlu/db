@@ -5,7 +5,7 @@
 
 [作业下载](../../assets/file/DB_SQL.pdf) [Word版](../../assets/file/DB_SQL.docx)
 
-[参考答案](../../assets/file/DB_SQL_w_Answer.zip)
+[参考答案](../../assets/file/DB_SQL_w_Answer.pdf)
 
 ## EE-19
 
